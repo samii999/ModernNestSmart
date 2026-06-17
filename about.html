@@ -4,131 +4,24 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About — ModernNestSmart</title>
-  <meta name="description" content="Learn about ModernNestSmart — your trusted source for smart home, gaming, and office gadget finds."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"/>
   <style>
-    .about-hero {
-      padding: 5rem 2rem 3rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .about-hero::before {
-      content: '';
-      position: absolute;
-      top: -150px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 500px;
-      height: 500px;
-      background: radial-gradient(circle, rgba(0,212,255,0.08) 0%, transparent 70%);
-      pointer-events: none;
-    }
-    .about-hero .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      padding: .4rem 1rem;
-      background: rgba(0,212,255,0.08);
-      border: 1px solid rgba(0,212,255,0.2);
-      border-radius: 100px;
-      font-size: .8rem;
-      font-weight: 600;
-      color: var(--accent);
-      letter-spacing: .05em;
-      text-transform: uppercase;
-      margin-bottom: 1.5rem;
-    }
-    .about-hero h1 {
-      font-family: var(--font-display);
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      color: var(--white);
-      line-height: 1.1;
-      margin-bottom: 1rem;
-    }
-    .about-hero p {
-      color: var(--text-muted);
-      font-size: 1.05rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    .about-section {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 3rem 2rem 5rem;
-    }
-    .about-section h2 {
-      font-family: var(--font-display);
-      font-size: clamp(1.8rem, 3vw, 2.5rem);
-      color: var(--white);
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .about-section p {
-      color: var(--text-muted);
-      font-size: 1.05rem;
-      line-height: 1.8;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .about-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-    .about-card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 2rem 1.5rem;
-      text-align: center;
-      transition: border-color 0.2s, transform 0.2s;
-    }
-    .about-card:hover {
-      border-color: rgba(0,212,255,0.25);
-      transform: translateY(-4px);
-    }
-    .about-card .icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-    .about-card h3 {
-      color: var(--white);
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-    .about-card p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      line-height: 1.6;
-      margin: 0;
-    }
-    .values-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .value-item {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-sm);
-      padding: 1.5rem;
-      text-align: center;
-    }
-    .value-item h4 {
-      color: var(--white);
-      font-size: 1rem;
-      margin-bottom: 0.3rem;
-    }
-    .value-item p {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      margin: 0;
-    }
+    .about-page { max-width: 760px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+    .about-page h1 { font-family:var(--font-display); font-size:clamp(2.5rem,6vw,3.5rem); color:var(--white); margin-bottom:1rem; line-height:1.1; }
+    .about-page .tagline { font-size:1.1rem; color:var(--accent); font-weight:600; margin-bottom:2rem; }
+    .about-page p { color:var(--text-muted); line-height:1.9; margin-bottom:1.2rem; font-size:.97rem; }
+    .about-page h2 { font-family:var(--font-display); font-size:1.6rem; color:var(--white); margin:2.5rem 0 .75rem; }
+    .divider { border:none; border-top:1px solid var(--border); margin:2.5rem 0; }
+    .niche-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin:1.5rem 0; }
+    .niche-card { background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius-sm); padding:1.2rem; }
+    .niche-card span { font-size:1.5rem; display:block; margin-bottom:.5rem; }
+    .niche-card p { font-size:.85rem; margin:0; color:var(--text-muted); }
+    .niche-card strong { color:var(--white); display:block; margin-bottom:.25rem; }
+    .pinterest-link { display:inline-flex; align-items:center; gap:.5rem; padding:.75rem 1.5rem; background:#e60023; color:#fff; font-weight:700; border-radius:100px; margin-top:1rem; transition:opacity .2s; }
+    .pinterest-link:hover { opacity:.85; }
+    @media(max-width:480px){ .niche-grid{ grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
@@ -142,76 +35,63 @@
       <li><a href="kitchen.html">Kitchen</a></li>
       <li><a href="rugs.html">Rugs</a></li>
       <li><a href="bedrooms.html">Bedrooms</a></li>
-      <li><a href="deals.html">Best Deals</a></li>
-      <li><a href="about.html" style="color:var(--accent)">About</a></li>
     </ul>
     <button class="nav-toggle" onclick="toggleMenu()">☰</button>
   </nav>
 
-  <div class="about-hero">
-    <div class="hero-badge">✨ About Us</div>
-    <h1>Smart Finds for<br><em>Smarter Living</em></h1>
-    <p>We curate the best gadgets, home upgrades, and gaming gear so you don't have to spend hours searching.</p>
+  <div class="about-page">
+    <h1>About<br><em>ModernNestSmart</em></h1>
+    <p class="tagline">✦ Smart Home Gadgets & Future Tech — Curated for Real People</p>
+
+    <p>Welcome to ModernNestSmart! We are a home decor and tech product curation site helping people build beautiful, functional and aesthetic spaces — without spending a fortune.</p>
+
+    <p>We started this journey on Pinterest, sharing daily finds across gaming setups, home office gadgets, kitchen tech, aesthetic rugs and futuristic bedroom ideas. With over 47K monthly views and growing, our community loves discovering products that actually make a difference in their homes.</p>
+
+    <hr class="divider"/>
+
+    <h2>What We Cover</h2>
+    <div class="niche-grid">
+      <div class="niche-card">
+        <span>🎮</span>
+        <strong>Gaming Setups</strong>
+        <p>RGB lights, desk mats, monitors and accessories for your dream setup.</p>
+      </div>
+      <div class="niche-card">
+        <span>💼</span>
+        <strong>Home Office</strong>
+        <p>Ergonomic gadgets and desk accessories to boost your productivity.</p>
+      </div>
+      <div class="niche-card">
+        <span>🍳</span>
+        <strong>Smart Kitchen</strong>
+        <p>Gadgets that save time and make your kitchen look amazing.</p>
+      </div>
+      <div class="niche-card">
+        <span>🌌</span>
+        <strong>Futuristic Bedrooms</strong>
+        <p>LED lights, projectors and decor to transform your bedroom vibe.</p>
+      </div>
+    </div>
+
+    <hr class="divider"/>
+
+    <h2>Our Promise</h2>
+    <p>Every product we recommend is hand-picked. We only share things we genuinely believe are worth your money. Some links on this site are affiliate links — meaning we earn a small commission if you buy, at no extra cost to you. This keeps the site free and running.</p>
+
+    <hr class="divider"/>
+
+    <h2>Follow Us on Pinterest</h2>
+    <p>We post 5 new pins every single day — product finds, setup ideas and room transformations. Come join our growing community!</p>
+    <a href="https://pinterest.com/modernnestmart" class="pinterest-link" target="_blank" rel="noopener">
+      📌 Follow @ModernNestSmart
+    </a>
   </div>
-
-  <section class="about-section">
-    <h2>Who We Are</h2>
-    <p>ModernNestSmart was born from a simple idea — finding high-quality, affordable products for modern living shouldn't be a chore. We test, review, and curate the best gadgets across gaming, home office, kitchen, and decor so you can shop with confidence.</p>
-    <p>Every product featured on this site is selected for its quality, value, and design. We're passionate about helping you build a home and workspace that reflects your style and makes life easier.</p>
-
-    <div class="about-grid">
-      <div class="about-card">
-        <div class="icon">🎯</div>
-        <h3>Curated Picks</h3>
-        <p>We hand-pick every product based on quality, reviews, and real customer feedback.</p>
-      </div>
-      <div class="about-card">
-        <div class="icon">💰</div>
-        <h3>Best Value</h3>
-        <p>We find the best deals so you get premium quality without breaking the bank.</p>
-      </div>
-      <div class="about-card">
-        <div class="icon">🔗</div>
-        <h3>Affiliate Transparency</h3>
-        <p>We earn small commissions from qualifying purchases — at no extra cost to you.</p>
-      </div>
-    </div>
-
-    <h2 style="margin-top:3rem;">Our Values</h2>
-    <div class="values-list">
-      <div class="value-item">
-        <h4>✨ Quality First</h4>
-        <p>Only products that meet our standards make the cut.</p>
-      </div>
-      <div class="value-item">
-        <h4>📦 Real Reviews</h4>
-        <p>We analyze thousands of real customer reviews before featuring anything.</p>
-      </div>
-      <div class="value-item">
-        <h4>🌱 Honest Advice</h4>
-        <p>We never recommend products we wouldn't use ourselves.</p>
-      </div>
-      <div class="value-item">
-        <h4>🚀 Daily Updates</h4>
-        <p>New finds added every day — stay ahead of the curve.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="pinterest-cta">
-    <div class="pinterest-inner">
-      <div class="p-icon">📌</div>
-      <h2>Follow Us on Pinterest</h2>
-      <p>Daily inspiration for your home, setup, and lifestyle</p>
-      <a href="https://pinterest.com/modernnestmart" class="btn-pinterest" target="_blank" rel="noopener">Follow @ModernNestSmart</a>
-    </div>
-  </section>
 
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
         <a href="index.html" class="nav-logo">Modern<span>Nest</span>Smart</a>
-        <p>Smart finds for smarter living. Affiliate links help support this site at no extra cost to you.</p>
+        <p>Smart finds for smarter living.</p>
       </div>
       <div class="footer-links">
         <h4>Categories</h4>
@@ -227,7 +107,6 @@
         <h4>Info</h4>
         <ul>
           <li><a href="about.html">About</a></li>
-          <li><a href="deals.html">Best Deals</a></li>
           <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
         </ul>
@@ -239,11 +118,5 @@
   </footer>
 
   <script src="js/main.js"></script>
-  <script>
-    function toggleMenu() {
-      const navLinks = document.querySelector('.nav-links');
-      navLinks.classList.toggle('open');
-    }
-  </script>
 </body>
 </html>
