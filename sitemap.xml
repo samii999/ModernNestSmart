@@ -35,9 +35,30 @@
     <lastmod>2025-06-17</lastmod>
     <priority>0.5</priority>
   </url>
+  
   <url>
-    <loc>https://modernnestsmart.tech/deals.html</loc>
+    <loc>https://modernnestsmart.tech/affiliate-disclosure.html</loc>
     <lastmod>2025-06-17</lastmod>
     <priority>0.5</priority>
+  </url>  
+  <url>
+    <loc>https://modernnestsmart.tech/privacy.html</loc>
+    <lastmod>2025-06-17</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://modernnestsmart.tech/bathroom.html</loc>
+    <lastmod>2025-06-17</lastmod>
+    <priority>0.8</priority>  
+    </url>
+  <url>
+    <loc>https://modernnestsmart.tech/small-space.html</loc>
+    <lastmod>2025-06-17</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://modernnestsmart.tech/wall-art.html</loc>
+    <lastmod>2025-06-17</lastmod>
+    <priority>0.8</priority>
   </url>
 </urlset>
