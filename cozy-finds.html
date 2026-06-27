@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aesthetic Wall Art & Prints — ModernNestSmart</title>
-  <meta name="description" content="Transform any blank wall into a statement. Curated aesthetic wall art, vintage prints, gallery wall ideas, canvas art and poster finds for every style."/>
+  <title>Unique Cozy Home Finds — ModernNestSmart</title>
+  <meta name="description" content="Cozy, quirky, and aesthetic product finds for every corner of your home. From cute decor to functional gadgets — all hand-picked for a warm vibe."/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"/>
@@ -22,13 +22,14 @@
     .product-card:hover { border-color:rgba(0,212,255,0.25); transform:translateY(-4px); }
     .product-badge { position:absolute; top:1rem; left:1rem; background:rgba(0,0,0,0.7); border:1px solid var(--border); padding:0.3rem 0.7rem; border-radius:100px; font-size:0.75rem; font-weight:600; backdrop-filter:blur(8px); }
     .product-img { height:160px; background:linear-gradient(135deg, var(--bg3), #1e1e2e); display:flex; align-items:center; justify-content:center; font-size:4rem; }
+    .product-img img { width:100%; height:100%; object-fit:contain; }
     .product-body { padding:1.25rem; }
     .product-cat { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--accent); display:block; margin-bottom:0.4rem; }
     .product-body h3 { font-size:1rem; font-weight:700; color:var(--white); margin-bottom:0.5rem; line-height:1.3; }
     .product-body p { font-size:0.85rem; color:var(--text-muted); margin-bottom:1.2rem; line-height:1.5; }
-    .product-footer { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+    .product-footer { display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
     .product-price { font-size:1rem; font-weight:700; color:var(--white); }
-    .btn-buy { padding:0.5rem 1.2rem; background:var(--accent); color:#000; font-weight:700; font-size:0.85rem; border-radius:100px; transition:opacity 0.2s; white-space:nowrap; text-decoration:none; }
+    .btn-buy { padding:0.5rem 1.2rem; background:var(--accent); color:#000; font-weight:700; font-size:0.85rem; border-radius:100px; transition:opacity 0.2s; white-space:nowrap; text-decoration:none; display:inline-block; }
     .btn-buy:hover { opacity:0.8; }
     .footer { background:var(--bg2); border-top:1px solid var(--border); padding:4rem 2rem 2rem; }
     .footer-inner { display:grid; grid-template-columns:2fr 1fr 1fr; gap:3rem; max-width:1200px; margin:0 auto 3rem; }
@@ -54,157 +55,153 @@
 <body>
 
   <nav class="nav">
-    <a href="index.html" class="nav-logo">Modern<span>Nest</span>Smart</a>
+    <a href="/" class="nav-logo">Modern<span>Nest</span>Smart</a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="gaming.html">Gaming</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="gaming.html">Gaming setup</a></li>
       <li><a href="home-office.html">Home Office</a></li>
       <li><a href="kitchen.html">Smart Kitchen</a></li>
       <li><a href="rugs.html">Aesthetic Rugs</a></li>
       <li><a href="bedrooms.html">Futuristic Bedrooms</a></li>
-      <li><a href="small-space.html">Small Spaces big Style</a></li>
       <li><a href="bathroom.html">Luxury Bathroom</a></li>
-      <li><a href="wall-art.html" style="color:var(--accent)">Wall Art</a></li>
-       <li><a href="cozy-finds.html">Cozy Finds</a></li>
+      <li><a href="small-space.html">Small Space</a></li>
+      <li><a href="wall-art.html">Wall Art</a></li>
+      <li><a href="cozy-finds.html" style="color:var(--accent)">Cozy Finds</a></li>
     </ul>
     <button class="nav-toggle" onclick="toggleMenu()">☰</button>
   </nav>
 
   <div class="page-hero">
-    <div class="hero-badge">🎨 Wall Art & Prints</div>
-    <h1>Aesthetic Wall Art<br><em>Make a Statement</em></h1>
-    <p>Curated aesthetic wall art, vintage prints, gallery wall ideas, canvas art and poster finds for every style — minimalist, maximalist, dark academia, boho and modern.</p>
+    <div class="hero-badge">🏡 Cozy Finds</div>
+    <h1>Unique Cozy<br><em>Home Finds</em></h1>
+    <p>Cozy, quirky, and aesthetic product finds for every corner of your home. From cute decor to functional gadgets — all hand-picked for a warm and unique vibe.</p>
   </div>
 
   <div class="products-section">
     <div class="section-label">Curated Finds</div>
-    <div class="section-title">Art That Speaks to You</div>
-    <div class="products-grid" id="wall-art-products">
+    <div class="section-title">Cozy & Unique Product Picks</div>
+    <div class="products-grid" id="cozy-products">
+      
+      
 
-        <article class="product-card" id="uniro-art">
-  <div class="product-badge">🖼️ Amazon's Choice</div>
+      <!--panda light-->
+      <article class="product-card" id="panda-light">
+  <div class="product-badge">🐼 Amazon's Choice</div>
   <div class="product-img">
-    <img src="images/wall-art/uniro.jpg" alt="Uniro Vintage Wall Art Prints" style="width:100%; height:100%; object-fit:contain;">
+    <img src="images/cozy-finds/cutepanda.jpg" alt="Cute Panda Night Light" style="width:100%; height:100%; object-fit:contain;">
   </div>
   <div class="product-body">
-    <span class="product-cat">Wall Art</span>
-    <h3>Vintage French Country Canvas Art Prints</h3>
+    <span class="product-cat">Cozy Decor</span>
+    <h3>Cute Squishy Panda Night Light</h3>
     <div style="display:flex; align-items:center; gap:0.5rem; margin:0.5rem 0; flex-wrap:wrap;">
-      <span style="color:#ffb347;">★★★★☆</span>
-      <span style="color:#ffb347; font-weight:600;">4.6</span>
-      <span style="font-size:0.75rem; color:#8888a0;">357 Reviews</span>
+      <span style="color:#ffb347;">★★★★★</span>
+      <span style="color:#ffb347; font-weight:600;">4.8</span>
+      <span style="font-size:0.75rem; color:#8888a0;">1,675 Reviews</span>
       <span style="font-size:0.7rem; background:#1a2a2a; padding:0.2rem 0.6rem; border-radius:30px; color:#00c853;">100+ bought</span>
       <span style="font-size:0.7rem; background:#ff9900; color:#000; padding:0.2rem 0.6rem; border-radius:30px;">Amazon's Choice</span>
     </div>
-    <p>9-piece vintage canvas art print set featuring French country, nature, and botanical designs. Perfect for gallery walls, farmhouse decor, and cottagecore aesthetics.</p>
+    <p>Adorable squishy panda night lamp with 3-level dimmable glow. Made from soft silicone — perfect for nursery, bedroom, or as a cute gift for kids and adults.</p>
     <div style="margin:0.5rem 0;">
-      <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $12.99</span>
-      <span style="font-size:0.7rem; background:#2a2a1a; color:#ffaa44; padding:0.2rem 0.6rem; border-radius:30px; margin-left:0.5rem;">9-Piece Set</span>
+      <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $16.99</span>
+      <span style="font-size:0.7rem; background:#2a2a1a; color:#ffaa44; padding:0.2rem 0.6rem; border-radius:30px; margin-left:0.5rem;">FREE Returns</span>
     </div>
-    <div style="font-size:0.7rem; color:#00e676; margin:0.3rem 0;">💰 FREE Returns | 18-month warranty</div>
     <div style="display:flex; gap:0.5rem; margin:0.5rem 0; font-size:0.7rem; flex-wrap:wrap;">
       <span style="color:#8888a0;">Styles:</span>
-      <span style="background:#d4c5a9; padding:2px 8px; border-radius:20px;">French Country</span>
-      <span style="background:#f5e6d3; padding:2px 8px; border-radius:20px;">Retro Farmhouse</span>
-      <span style="background:#c4b5a0; padding:2px 8px; border-radius:20px;">Coastal Cowgirl</span>
-      <span style="background:#e8d5c4; padding:2px 8px; border-radius:20px;">Nursery</span>
+      <span style="background:#222; padding:2px 8px; border-radius:20px;">Panda</span>
+      <span style="background:#ffd700; padding:2px 8px; border-radius:20px;">Duck</span>
+      <span style="background:#2e8b57; padding:2px 8px; border-radius:20px;">Frog</span>
+      <span style="background:#ff69b4; padding:2px 8px; border-radius:20px;">Pig</span>
+      <span style="background:#8b6b4a; padding:2px 8px; border-radius:20px;">Sloth</span>
     </div>
     <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">
-      ✅ 9 prints • 3 sizes • Unframed • Fade-resistant canvas • Gallery wall ready
+      ✅ Squishy silicone • 3-level dimmable • Nursery safe • Cute gift • Animal collection
     </div>
     <div class="product-footer">
-      <span class="product-price">US $12.99</span>
-      <a href="https://amzn.to/4eydJcx" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
+      <span class="product-price">US $16.99</span>
+      <a href="https://amzn.to/4akjGsC" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
     </div>
   </div>
 </article>
 
 
-<!--bonsai 3d led wall art-->
-<article class="product-card" id="bonsai-wallart">
-  <div class="product-badge">✨ Premium</div>
+<!--car keyholder-->
+<article class="product-card" id="car-keyholder">
+  <div class="product-badge">🚗 JDM</div>
   <div class="product-img">
-    <img src="images/wall-art/bonsaiwallart.jpg" alt="Bonsai 3D LED Wall Art Light" style="width:100%; height:100%; object-fit:contain;">
+    <img src="images/cozy-finds/carkeyholder.jpg" alt="Initial D Car Key Holder" style="width:100%; height:100%; object-fit:contain;">
   </div>
   <div class="product-body">
-    <span class="product-cat">Wall Art</span>
-    <h3>3D LED Wall Art – Bonsai Mountain Design</h3>
+    <span class="product-cat">Cozy Decor</span>
+    <h3>AE86 & MX5 Retro Car Wall Key Holder</h3>
     <div style="display:flex; align-items:center; gap:0.5rem; margin:0.5rem 0; flex-wrap:wrap;">
-      <span style="color:#ffb347;">★★★★★</span>
-      <span style="color:#ffb347; font-weight:600;">4.7</span>
-      <span style="font-size:0.75rem; color:#8888a0;">19 Reviews</span>
+      <span style="color:#ffb347;">★★★★☆</span>
+      <span style="color:#ffb347; font-weight:600;">4.5</span>
+      <span style="font-size:0.75rem; color:#8888a0;">16 Reviews</span>
+      <span style="font-size:0.7rem; background:#1a2a2a; padding:0.2rem 0.6rem; border-radius:30px; color:#00c853;">(Search this page)</span>
     </div>
-    <p>Stunning 3D mountain wall art with LED backlighting. Crafted from high-transparency acrylic with UV engraving. Creates a warm, inviting glow — perfect for living room, bedroom, or entrance.</p>
+    <p>Retro pop-up headlight key holder with auto LED light — inspired by Initial D AE86 and Mazda MX5 Miata. Lights up when keys are hung, auto-off after 10 seconds.</p>
     <div style="margin:0.5rem 0;">
-      <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $168.98</span>
-      <span style="font-size:0.7rem; background:#2a2a1a; color:#ffaa44; padding:0.2rem 0.6rem; border-radius:30px; margin-left:0.5rem;">Or $42.25/2 weeks</span>
+      <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $15.68</span>
+      <span style="font-size:0.7rem; background:#2a2a1a; color:#ffaa44; padding:0.2rem 0.6rem; border-radius:30px; margin-left:0.5rem;">FREE Returns</span>
     </div>
-    <div style="font-size:0.7rem; color:#00e676; margin:0.3rem 0;">💰 Up to 9% off if you qualify</div>
     <div style="display:flex; gap:0.5rem; margin:0.5rem 0; font-size:0.7rem; flex-wrap:wrap;">
-      <span style="color:#8888a0;">Styles:</span>
-      <span style="background:#2a4a3a; padding:2px 8px; border-radius:20px;">Stylle H</span>
-      <span style="background:#3a2a4a; padding:2px 8px; border-radius:20px;">Stylle G</span>
-      <span style="background:#4a3a2a; padding:2px 8px; border-radius:20px;">Stylle B</span>
-      <span style="background:#2a3a4a; padding:2px 8px; border-radius:20px;">Stylle E</span>
-      <span style="background:#4a2a3a; padding:2px 8px; border-radius:20px;">Stylle I</span>
+      <span style="color:#8888a0;">Colors:</span>
+      <span style="background:#f5f5f5; color:#000; padding:2px 8px; border-radius:20px;">AE86 White</span>
+      <span style="background:#222; padding:2px 8px; border-radius:20px;">AE86 Black</span>
+      <span style="background:#8b0000; padding:2px 8px; border-radius:20px;">MX5 Red</span>
+      <span style="background:#ffd700; padding:2px 8px; border-radius:20px;">MX5 Yellow</span>
+      <span style="background:#f5f5f5; color:#000; padding:2px 8px; border-radius:20px;">MX5 White</span>
     </div>
     <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">
-      ✅ Acrylic + metal • LED backlight • Nature-inspired • Modern design • Wall mount
+      ✅ Pop-up LED headlights • Auto-off (10 sec) • Wall mount • JDM tribute • Key organizer
     </div>
     <div class="product-footer">
-      <span class="product-price">US $168.98</span>
-      <a href="https://amzn.to/3SmoOWR" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
+      <span class="product-price">US $15.68</span>
+      <a href="https://amzn.to/4uYr7wM" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
     </div>
   </div>
 </article>
 
+<!--basketball charger-->
 
-<!--3d corner wall art decal-->
-<article class="product-card" id="corner-illusion">
-  <div class="product-badge">🌀 3D Illusion</div>
+<article class="product-card" id="basketball-charger">
+  <div class="product-badge">🏀 3-Point Fun</div>
   <div class="product-img">
-    <img src="images/wall-art/3dcornerwall.jpg" alt="3D Optical Illusion Corner Wall Art Decal" style="width:100%; height:100%; object-fit:contain;">
+    <img src="images/cozy-finds/basketballcharger.jpg" alt="Basketball 3-in-1 Charging Station" style="width:100%; height:100%; object-fit:contain;">
   </div>
   <div class="product-body">
-    <span class="product-cat">Wall Decor</span>
-    <h3>3D Optical Illusion Corner Wall Art Decal</h3>
+    <span class="product-cat">Cozy Gadget</span>
+    <h3>3-in-1 Charging Station with Mini Basketball</h3>
     <div style="display:flex; align-items:center; gap:0.5rem; margin:0.5rem 0; flex-wrap:wrap;">
-      <span style="font-size:0.7rem; background:#1a2a2a; padding:0.2rem 0.6rem; border-radius:30px; color:#00c853;">New</span>
+      <span style="color:#ffb347;">★★★★☆</span>
+      <span style="color:#ffb347; font-weight:600;">4.6</span>
+      <span style="font-size:0.75rem; color:#8888a0;">178 Reviews</span>
     </div>
-    <p>Peel and stick geometric wall decal that creates a stunning 3D optical illusion in any corner. Perfect for modern living rooms, offices, and creative interiors. Easy to apply and remove.</p>
+    <p>Aluminum alloy 3-in-1 wireless charger for iPhone, Apple Watch, and AirPods. Features a magnetic basketball hoop with mini balls — stress-relief fun on your desk!</p>
     <div style="margin:0.5rem 0;">
-      <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $6.99</span>
-      <span style="font-size:0.7rem; color:#8888a0; margin-left:0.5rem;">$3.50 per count</span>
+      <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $59.99</span>
+      <span style="font-size:0.7rem; background:#2a2a1a; color:#ffaa44; padding:0.2rem 0.6rem; border-radius:30px; margin-left:0.5rem;">FREE Returns</span>
     </div>
-    <div style="font-size:0.7rem; color:#00e676; margin:0.3rem 0;">💰 Up to 10% off if you qualify</div>
+    <div style="font-size:0.7rem; color:#00e676; margin:0.3rem 0;">💰 Or $15/2 weeks</div>
     <div style="display:flex; gap:0.5rem; margin:0.5rem 0; font-size:0.7rem; flex-wrap:wrap;">
-      <span style="color:#8888a0;">Shapes:</span>
-      <span style="background:#222; color:#fff; padding:2px 8px; border-radius:20px;">A</span>
-      <span style="background:#444; color:#fff; padding:2px 8px; border-radius:20px;">B</span>
-      <span style="background:#666; color:#fff; padding:2px 8px; border-radius:20px;">C</span>
-      <span style="background:#1a2a3a; color:#fff; padding:2px 8px; border-radius:20px;">MIX(ABC)</span>
+      <span style="color:#8888a0;">Color:</span>
+      <span style="background:#6b6b6b; padding:2px 8px; border-radius:20px;">Gray</span>
     </div>
     <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">
-      ✅ Peel & stick • Fade resistant • Geometric design • Corner illusion • Modern decor
+      ✅ 3-in-1 wireless charging • Basketball hoop game • Aluminum alloy • MagSafe compatible • Stress-relief
     </div>
     <div class="product-footer">
-      <span class="product-price">US $6.99</span>
-      <a href="https://amzn.to/4b3Fp8b" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
+      <span class="product-price">US $59.99</span>
+      <a href="https://amzn.to/4vtY8C5" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
     </div>
   </div>
 </article>
 
-      <!-- Products will be dynamically loaded here -->
+
+<!-- Product cards will be added here -->
     </div>
   </div>
-<section class="pinterest-cta">
-    <div class="pinterest-inner">
-      <div class="p-icon">📌</div>
-      <h2>Wall Art Ideas Daily on Pinterest</h2>
-      <p>Before & afters, product finds and futuristic wall art inspo every single day</p>
-      <a href="https://www.pinterest.com/ModernNestSmart/" class="btn-pinterest" target="_blank" rel="noopener">Follow @ModernNestSmart</a>
-    </div>
-  </section>
+
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
@@ -216,11 +213,11 @@
         <ul>
           <li><a href="gaming.html">Gaming Setups</a></li>
           <li><a href="home-office.html">Home Office</a></li>
-          <li><a href="kitchen.html">Smart Kitchen</a></li>
+          <li><a href="kitchen.html">Kitchen Gadgets</a></li>
           <li><a href="rugs.html">Aesthetic Rugs</a></li>
           <li><a href="bedrooms.html">Futuristic Bedrooms</a></li>
           <li><a href="bathroom.html">Luxury Bathroom</a></li>
-          <li><a href="small-space.html">Small Spaces big Style</a></li>
+          <li><a href="small-space.html">Small Space</a></li>
           <li><a href="wall-art.html">Wall Art</a></li>
           <li><a href="cozy-finds.html">Cozy Finds</a></li>
         </ul>
@@ -229,6 +226,7 @@
         <h4>Info</h4>
         <ul>
           <li><a href="about.html">About</a></li>
+          <li><a href="deals.html">Best Deals</a></li>
           <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
           <li><a href="privacy.html">Privacy Policy</a></li>
         </ul>
