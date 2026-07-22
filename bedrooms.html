@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3P9X1440RD"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-3P9X1440RD');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3P9X1440RD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3P9X1440RD');
+  </script>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Futuristic Bedrooms — ModernNestSmart</title>
@@ -29,30 +28,35 @@
     .vibe-banner p { color:var(--text-muted); font-size:.95rem; max-width:600px; margin:0 auto; }
     .vibe-banner strong { color:#a78bfa; }
     .products-section { max-width:1200px; margin:0 auto; padding:3rem 2rem 5rem; }
-    .products-section .section-label { font-size:.75rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#a78bfa; margin-bottom:.75rem; }
-    .products-section .section-title { font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2.2rem); color:var(--white); margin-bottom:2rem; }
+    .products-section .section-label { font-size:.75rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#a78bfa; margin-bottom:.75rem; text-align:center; }
+    .products-section .section-title { font-family:var(--font-display); font-size:clamp(1.5rem,3vw,2.2rem); color:var(--white); margin-bottom:2rem; text-align:center; }
+    .products-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem; max-width:1200px; margin:0 auto; text-align:left; }
+    .product-card { background:var(--card-bg); border:1px solid var(--border); border-radius:var(--radius); overflow:hidden; transition:border-color .2s, transform .2s; position:relative; }
+    .product-card:hover { border-color:rgba(0,212,255,0.25); transform:translateY(-4px); }
+    .product-badge { position:absolute; top:1rem; left:1rem; background:rgba(0,0,0,0.7); border:1px solid var(--border); padding:0.3rem 0.7rem; border-radius:100px; font-size:0.75rem; font-weight:600; backdrop-filter:blur(8px); }
+    .product-img { height:180px; background:linear-gradient(135deg, var(--bg3), #1e1e2e); display:flex; align-items:center; justify-content:center; padding:0.5rem; }
+    .product-img img { width:100%; height:100%; object-fit:contain; }
+    .product-body { padding:1.25rem; }
+    .product-cat { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; color:var(--accent); display:block; margin-bottom:0.4rem; }
+    .product-body h3 { font-size:1.1rem; font-weight:700; color:var(--white); margin-bottom:0.5rem; line-height:1.3; }
+    .product-body p { font-size:0.85rem; color:var(--text-muted); margin-bottom:1.2rem; line-height:1.5; }
+    .product-footer { display:flex; align-items:center; justify-content:space-between; gap:1rem; margin-top:1rem; padding-top:0.8rem; border-top:1px solid var(--border); }
+    .product-price { font-size:1.1rem; font-weight:700; color:var(--white); }
+    .btn-buy { padding:0.5rem 1.2rem; background:var(--accent); color:#000; font-weight:700; font-size:0.85rem; border-radius:100px; transition:opacity 0.2s; white-space:nowrap; text-decoration:none; }
+    .btn-buy:hover { opacity:0.8; }
+    .pinterest-cta { background:linear-gradient(135deg, #1a0533, #0a0a1a); border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding:5rem 2rem; text-align:center; }
+    .pinterest-inner { max-width:500px; margin:0 auto; }
+    .p-icon { font-size:3rem; margin-bottom:1rem; }
+    .pinterest-cta h2 { font-family:var(--font-display); font-size:2rem; color:var(--white); margin-bottom:0.75rem; }
+    .pinterest-cta p { color:var(--text-muted); margin-bottom:2rem; }
+    .btn-pinterest { display:inline-block; padding:0.85rem 2rem; background:#e60023; color:white; font-weight:700; border-radius:100px; transition:opacity 0.2s; text-decoration:none; }
+    .btn-pinterest:hover { opacity:0.85; }
   </style>
 </head>
 <body>
 
-  <nav class="nav">
-    <a href="index.html" class="nav-logo">Modern<span>Nest</span>Smart</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="gaming.html">Gaming Setups</a></li>
-      <li><a href="home-office.html">Home Office Tech</a></li>
-      <li><a href="kitchen.html">Smart Kitchen</a></li>
-      <li><a href="rugs.html">Aesthetic Rugs</a></li>
-       <li><a href="bedrooms.html" style="color:var(--accent)">Futuristic Bedrooms</a></li>
-       <li><a href="small-space.html">Small Spaces big Style</a></li>
-      <li><a href="bathroom.html">Luxury Bathroom</a></li>
-      <li><a href="wall-art.html">Wall Art</a></li>
-       <li><a href="cozy-finds.html">Cozy Finds</a></li>
-     
-      
-    </ul>
-    <button class="nav-toggle" onclick="toggleMenu()">☰</button>
-  </nav>
+  <!-- HEADER INJECT -->
+  <div id="header-placeholder"></div>
 
   <div class="page-hero">
     <div class="hero-badge">🌌 Bedrooms</div>
@@ -107,7 +111,6 @@
       </article>
 
       <!-- wabi sabi nightstand -->
-
       <article class="product-card" id="sabi-nightstand">
         <div class="product-badge">✨ Premium</div>
         <div class="product-img">
@@ -131,7 +134,6 @@
           <div style="font-size:0.7rem; color:#00e676; margin:0.3rem 0;">💰 US $55 off on US $449</div>
           <div style="display:flex; gap:0.5rem; margin:0.5rem 0; font-size:0.7rem; flex-wrap:wrap;">
             <span style="color:#8888a0;">4 Styles Available</span>
-           
           </div>
           <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">
             ✅ Hidden storage • Wabi Sabi design • Premium quality • Multiple styles
@@ -142,7 +144,6 @@
           </div>
         </div>
       </article>
-
 
       <!-- air hum -->
       <article class="product-card" id="air-hum">
@@ -179,88 +180,86 @@
 
       <!-- lazy chair -->
       <article class="product-card" id="lazy-chair">
-  <div class="product-badge">🛋️ Lazy</div>
-  <div class="product-img">
-    <img src="images/bedrooms/lazychair.png" alt="Lazy Inflatable Lounge Chair" style="width:100%; height:100%; object-fit:contain;">
-  </div>
-  <div class="product-body">
-    <span class="product-cat">Furniture</span>
-    <h3>Inflatable Lounge Chair with Foot Stool</h3>
-    <div style="display:flex; align-items:center; gap:0.5rem; margin:0.5rem 0; flex-wrap:wrap;">
-      <span style="color:#ffb347;">★★★★☆</span>
-      <span style="color:#ffb347; font-weight:600;">4.6</span>
-      <span style="font-size:0.75rem; color:#8888a0;">52 Reviews</span>
-      <span style="font-size:0.7rem; background:#1a2a2a; padding:0.2rem 0.6rem; border-radius:30px; color:#00c853;">233 sold</span>
-    </div>
-    <p>Portable inflatable sofa with foot stool — perfect for living room, bedroom, or outdoor. Folds flat for easy storage when not in use.</p>
-    <div style="margin:0.5rem 0;">
-      <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $58.52</span>
-      <span style="font-size:0.8rem; text-decoration:line-through; color:#8888a0; margin-left:0.5rem;">US $128.59</span>
-      <span style="font-size:0.7rem; background:#2a2a1a; color:#ffaa44; padding:0.2rem 0.6rem; border-radius:30px; margin-left:0.5rem;">Save US $70.07</span>
-    </div>
-    <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">🔥 Popular</div>
-    <div style="font-size:0.7rem; color:#00e676; margin:0.3rem 0;">💰 US $4 off on US $30 | Extra 1% off with coins</div>
-    <div style="display:flex; gap:0.5rem; margin:0.5rem 0; font-size:0.7rem; flex-wrap:wrap;">
-      <span style="color:#8888a0;">Styles:</span>
-      <span style="background:#d4a574; padding:2px 8px; border-radius:20px;">01</span>
-      <span style="background:#8b6b4a; padding:2px 8px; border-radius:20px;">02</span>
-      <span style="background:#4a8b6b; padding:2px 8px; border-radius:20px;">03</span>
-      <span style="background:#6b4a8b; padding:2px 8px; border-radius:20px;">04</span>
-    </div>
-    <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">
-      ✅ Includes foot stool • Folding portable • Indoor/outdoor • Easy storage
-    </div>
-    <div class="product-footer">
-      <span class="product-price">US $58.52</span>
-      <a href="https://s.click.aliexpress.com/e/_c4TxVppf" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
-    </div>
-  </div>
-</article>
+        <div class="product-badge">🛋️ Lazy</div>
+        <div class="product-img">
+          <img src="images/bedrooms/lazychair.png" alt="Lazy Inflatable Lounge Chair" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Furniture</span>
+          <h3>Inflatable Lounge Chair with Foot Stool</h3>
+          <div style="display:flex; align-items:center; gap:0.5rem; margin:0.5rem 0; flex-wrap:wrap;">
+            <span style="color:#ffb347;">★★★★☆</span>
+            <span style="color:#ffb347; font-weight:600;">4.6</span>
+            <span style="font-size:0.75rem; color:#8888a0;">52 Reviews</span>
+            <span style="font-size:0.7rem; background:#1a2a2a; padding:0.2rem 0.6rem; border-radius:30px; color:#00c853;">233 sold</span>
+          </div>
+          <p>Portable inflatable sofa with foot stool — perfect for living room, bedroom, or outdoor. Folds flat for easy storage when not in use.</p>
+          <div style="margin:0.5rem 0;">
+            <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $58.52</span>
+            <span style="font-size:0.8rem; text-decoration:line-through; color:#8888a0; margin-left:0.5rem;">US $128.59</span>
+            <span style="font-size:0.7rem; background:#2a2a1a; color:#ffaa44; padding:0.2rem 0.6rem; border-radius:30px; margin-left:0.5rem;">Save US $70.07</span>
+          </div>
+          <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">🔥 Popular</div>
+          <div style="font-size:0.7rem; color:#00e676; margin:0.3rem 0;">💰 US $4 off on US $30 | Extra 1% off with coins</div>
+          <div style="display:flex; gap:0.5rem; margin:0.5rem 0; font-size:0.7rem; flex-wrap:wrap;">
+            <span style="color:#8888a0;">Styles:</span>
+            <span style="background:#d4a574; padding:2px 8px; border-radius:20px;">01</span>
+            <span style="background:#8b6b4a; padding:2px 8px; border-radius:20px;">02</span>
+            <span style="background:#4a8b6b; padding:2px 8px; border-radius:20px;">03</span>
+            <span style="background:#6b4a8b; padding:2px 8px; border-radius:20px;">04</span>
+          </div>
+          <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">
+            ✅ Includes foot stool • Folding portable • Indoor/outdoor • Easy storage
+          </div>
+          <div class="product-footer">
+            <span class="product-price">US $58.52</span>
+            <a href="https://s.click.aliexpress.com/e/_c4TxVppf" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
+          </div>
+        </div>
+      </article>
 
-
-<!-- peakeep mirror clock -->
-<article class="product-card" id="peakeep-clock">
-  <div class="product-badge">🪞 Overall Pick</div>
-  <div class="product-img">
-    <img src="images/bedrooms/peakeepmirror.jpg" alt="Peakeep Mirror Alarm Clock" style="width:100%; height:100%; object-fit:contain;">
-  </div>
-  <div class="product-body">
-    <span class="product-cat">Bedroom Decor</span>
-    <h3>Slim Digital Mirror Alarm Clock – Gold</h3>
-    <div style="display:flex; align-items:center; gap:0.5rem; margin:0.5rem 0; flex-wrap:wrap;">
-      <span style="color:#ffb347;">★★★★☆</span>
-      <span style="color:#ffb347; font-weight:600;">4.6</span>
-      <span style="font-size:0.75rem; color:#8888a0;">2,311 Reviews</span>
-      <span style="font-size:0.7rem; background:#1a2a2a; padding:0.2rem 0.6rem; border-radius:30px; color:#00c853;">6K+ bought</span>
-      <span style="font-size:0.7rem; background:#ff9900; color:#000; padding:0.2rem 0.6rem; border-radius:30px;">Overall Pick</span>
-    </div>
-    <p>Stylish gold mirror-finish digital clock with 6 brightness levels, loud alarm with 5 adjustable volumes, and battery backup. Perfect for bedroom, office, or dorm decor.</p>
-    <div style="margin:0.5rem 0;">
-      <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $18.99</span>
-      <span style="font-size:0.7rem; background:#2a2a1a; color:#ffaa44; padding:0.2rem 0.6rem; border-radius:30px; margin-left:0.5rem;">FREE Returns</span>
-    </div>
-    <div style="display:flex; gap:0.5rem; margin:0.5rem 0; font-size:0.7rem; flex-wrap:wrap;">
-      <span style="color:#8888a0;">Colors:</span>
-      <span style="background:#d4af37; padding:2px 8px; border-radius:20px;">Gold Mirror</span>
-      <span style="background:#c0a080; padding:2px 8px; border-radius:20px;">Rose Gold</span>
-      <span style="background:#f5f5f5; color:#000; padding:2px 8px; border-radius:20px;">White Mirror</span>
-      <span style="background:#222; padding:2px 8px; border-radius:20px;">Black</span>
-    </div>
-    <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">
-      ✅ Mirror finish • 6 brightness levels • 5 alarm volumes • Battery backup • 9-min snooze
-    </div>
-    <div class="product-footer">
-      <span class="product-price">US $18.99</span>
-      <a href="https://amzn.to/4vHlwvZ" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
-    </div>
-  </div>
-</article>
-
-                                                  <!-- all products up there -->
+      <!-- peakeep mirror clock -->
+      <article class="product-card" id="peakeep-clock">
+        <div class="product-badge">🪞 Overall Pick</div>
+        <div class="product-img">
+          <img src="images/bedrooms/peakeepmirror.jpg" alt="Peakeep Mirror Alarm Clock" style="width:100%; height:100%; object-fit:contain;">
+        </div>
+        <div class="product-body">
+          <span class="product-cat">Bedroom Decor</span>
+          <h3>Slim Digital Mirror Alarm Clock – Gold</h3>
+          <div style="display:flex; align-items:center; gap:0.5rem; margin:0.5rem 0; flex-wrap:wrap;">
+            <span style="color:#ffb347;">★★★★☆</span>
+            <span style="color:#ffb347; font-weight:600;">4.6</span>
+            <span style="font-size:0.75rem; color:#8888a0;">2,311 Reviews</span>
+            <span style="font-size:0.7rem; background:#1a2a2a; padding:0.2rem 0.6rem; border-radius:30px; color:#00c853;">6K+ bought</span>
+            <span style="font-size:0.7rem; background:#ff9900; color:#000; padding:0.2rem 0.6rem; border-radius:30px;">Overall Pick</span>
+          </div>
+          <p>Stylish gold mirror-finish digital clock with 6 brightness levels, loud alarm with 5 adjustable volumes, and battery backup. Perfect for bedroom, office, or dorm decor.</p>
+          <div style="margin:0.5rem 0;">
+            <span style="font-size:1.5rem; font-weight:800; color:#ff4d4d;">US $18.99</span>
+            <span style="font-size:0.7rem; background:#2a2a1a; color:#ffaa44; padding:0.2rem 0.6rem; border-radius:30px; margin-left:0.5rem;">FREE Returns</span>
+          </div>
+          <div style="display:flex; gap:0.5rem; margin:0.5rem 0; font-size:0.7rem; flex-wrap:wrap;">
+            <span style="color:#8888a0;">Colors:</span>
+            <span style="background:#d4af37; padding:2px 8px; border-radius:20px;">Gold Mirror</span>
+            <span style="background:#c0a080; padding:2px 8px; border-radius:20px;">Rose Gold</span>
+            <span style="background:#f5f5f5; color:#000; padding:2px 8px; border-radius:20px;">White Mirror</span>
+            <span style="background:#222; padding:2px 8px; border-radius:20px;">Black</span>
+          </div>
+          <div style="font-size:0.65rem; color:#8888a0; margin:0.3rem 0;">
+            ✅ Mirror finish • 6 brightness levels • 5 alarm volumes • Battery backup • 9-min snooze
+          </div>
+          <div class="product-footer">
+            <span class="product-price">US $18.99</span>
+            <a href="https://amzn.to/4vHlwvZ" class="btn-buy" target="_blank" rel="noopener sponsored">Shop Now →</a>
+          </div>
+        </div>
+      </article>
 
     </div>
   </div>
 
+  <!-- PINTEREST CTA -->
   <section class="pinterest-cta">
     <div class="pinterest-inner">
       <div class="p-icon">📌</div>
@@ -270,40 +269,17 @@
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-logo">Modern<span>Nest</span>Smart</a>
-        <p>Smart finds for smarter living. Affiliate links help support this site at no extra cost to you.</p>
-      </div>
-      <div class="footer-links">
-        <h4>Categories</h4>
-        <ul>
-          <li><a href="gaming.html">Gaming Setups</a></li>
-          <li><a href="home-office.html">Home Office</a></li>
-          <li><a href="kitchen.html">Smart Kitchen</a></li>
-          <li><a href="rugs.html">Aesthetic Rugs</a></li>
-          <li><a href="bedrooms.html">Futuristic Bedrooms</a></li>
-          <li><a href="bathroom.html">Luxury Bathroom</a></li>
-          <li><a href="small-space.html">Small Spaces big Style</a></li>
-          <li><a href="wall-art.html">Wall Art</a></li>
-          <li><a href="cozy-finds.html">Cozy Finds</a></li>
-        </ul>
-      </div>  
-      <div class="footer-links">
-        <h4>Info</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 ModernNestSmart · Affiliate Disclosure: We earn commissions from qualifying purchases.</p>
-    </div>
-  </footer>
+  <!-- FOOTER INJECT -->
+  <div id="footer-placeholder"></div>
 
   <script src="js/main.js"></script>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks) {
+        navLinks.classList.toggle('open');
+      }
+    }
+  </script>
 </body>
 </html>
