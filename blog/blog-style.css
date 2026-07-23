@@ -1,0 +1,758 @@
+/* ============================================================ */
+/* BLOG-STYLE.CSS - Corporate/Consultancy Style                */
+/* Complete File - All Styles Included                         */
+/* ============================================================ */
+
+/* ----- RESET & BASE ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f6f3;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.7;
+    padding: 2rem 1.5rem;
+}
+
+.blog-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 3rem 3rem 4rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+/* ----- TYPOGRAPHY ----- */
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.subhead {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #5a5a5a;
+    border-bottom: 2px solid #e8e4e0;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    margin: 1.8rem 0 0.8rem;
+}
+
+p {
+    font-size: 1rem;
+    color: #333333;
+    margin-bottom: 1rem;
+    max-width: 78ch;
+    line-height: 1.8;
+}
+
+/* ============================================================ */
+/* HERO HEADER                                                   */
+/* ============================================================ */
+.hero-header {
+    margin-bottom: 2rem;
+}
+
+.category-tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #0066cc;
+    background: #e8f0f8;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.meta-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 1rem 0 1.5rem;
+    padding: 0.8rem 0;
+    border-top: 1px solid #e8e4e0;
+    border-bottom: 1px solid #e8e4e0;
+}
+
+.meta-item {
+    font-size: 0.85rem;
+    color: #5a5a5a;
+    font-weight: 500;
+}
+
+.meta-item::before {
+    content: "•";
+    margin-right: 0.5rem;
+    color: #0066cc;
+}
+
+.meta-item:first-child::before {
+    content: "";
+    margin-right: 0;
+}
+
+.intro-text p {
+    font-size: 1.05rem;
+    color: #333333;
+    max-width: 80ch;
+}
+
+/* ============================================================ */
+/* IMAGE DISPLAY - RTINGS-STYLE ASYMMETRIC BENTO GRID          */
+/* ============================================================ */
+
+.image-showcase {
+    margin: 1.5rem 0 2.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #faf8f6;
+    border: 1px solid #e8e4e0;
+}
+
+/* ASYMMETRIC BENTO GRID - 1 big left + 2x2 grid right */
+.image-bento {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 0;
+    background: #faf8f6;
+    min-height: 380px;
+}
+
+/* LEFT - BIG VERTICAL IMAGE */
+.image-bento .bento-main {
+    background: #faf8f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    min-height: 380px;
+}
+
+.image-bento .bento-main img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.image-bento .bento-main img:hover {
+    transform: scale(1.02);
+}
+
+/* RIGHT - 2x2 GRID */
+.image-bento .bento-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+    background: #faf8f6;
+}
+
+.image-bento .bento-grid .thumb {
+    background: #faf8f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-left: 1px solid #e8e4e0;
+    border-bottom: 1px solid #e8e4e0;
+    min-height: 190px;
+}
+
+/* Remove border from specific positions */
+.image-bento .bento-grid .thumb:nth-child(1) {
+    border-top: none;
+}
+.image-bento .bento-grid .thumb:nth-child(2) {
+    border-top: none;
+}
+.image-bento .bento-grid .thumb:nth-child(3) {
+    border-bottom: none;
+}
+.image-bento .bento-grid .thumb:nth-child(4) {
+    border-bottom: none;
+}
+.image-bento .bento-grid .thumb:nth-child(2) {
+    border-right: none;
+}
+.image-bento .bento-grid .thumb:nth-child(4) {
+    border-right: none;
+}
+
+.image-bento .bento-grid .thumb img {
+    width: 100%;
+    max-height: 160px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.image-bento .bento-grid .thumb img:hover {
+    transform: scale(1.04);
+}
+
+/* When only 2 images (Logitech) */
+.image-bento .bento-grid.two-col {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.image-bento .bento-grid.two-col .thumb {
+    min-height: 180px;
+    border-bottom: none;
+}
+
+.image-bento .bento-grid.two-col .thumb:nth-child(1) {
+    border-top: none;
+    border-left: none;
+}
+.image-bento .bento-grid.two-col .thumb:nth-child(2) {
+    border-top: none;
+    border-right: none;
+}
+
+/* When only 3 images (fallback) */
+.image-bento .bento-grid.three-col {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.image-bento .bento-grid.three-col .thumb {
+    min-height: 180px;
+    border-bottom: none;
+}
+
+.image-bento .bento-grid.three-col .thumb:first-child {
+    border-left: none;
+}
+.image-bento .bento-grid.three-col .thumb:last-child {
+    border-right: none;
+}
+
+/* ============================================================ */
+/* MOUSE REVIEW CARD - CLEAN CORPORATE                         */
+/* ============================================================ */
+.mouse-review {
+    background: #faf8f6;
+    border-radius: 8px;
+    padding: 2rem 2.2rem 2.5rem;
+    margin: 2.5rem 0;
+    border: 1px solid #e8e4e0;
+    transition: box-shadow 0.3s;
+}
+
+.mouse-review:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+.review-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+}
+
+.review-title {
+    flex: 1;
+    min-width: 250px;
+}
+
+.title-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.title-row h2 {
+    font-size: 1.8rem;
+}
+
+.review-title .badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.15rem 0.9rem;
+    border-radius: 20px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.badge.gold { background: #f0c040; color: #1a1a1a; }
+.badge.green { background: #2b6e4f; color: #ffffff; }
+.badge.blue { background: #0066cc; color: #ffffff; }
+.badge.purple { background: #7b4a8c; color: #ffffff; }
+.badge.orange { background: #d97a2a; color: #ffffff; }
+
+.review-stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.2rem 0 0.3rem;
+}
+
+.review-stats .rating {
+    color: #0066cc;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.review-stats .rating em {
+    color: #5a5a5a;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.review-stats .sales-volume {
+    color: #5a5a5a;
+    font-size: 0.85rem;
+}
+
+.price-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.8rem;
+    margin: 0.3rem 0 0.6rem;
+}
+
+.price-current {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.price-note {
+    font-size: 0.85rem;
+    color: #8a8a8a;
+}
+
+.price-original {
+    font-size: 1rem;
+    color: #8a8a8a;
+    text-decoration: line-through;
+}
+
+.price-save {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #2b6e4f;
+    background: #e8f0ec;
+    padding: 0.1rem 0.9rem;
+    border-radius: 20px;
+}
+
+.spec-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.8rem;
+    margin: 0.4rem 0 0.6rem;
+}
+
+.spec-tags span {
+    font-size: 0.75rem;
+    background: #ffffff;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    color: #333333;
+    border: 1px solid #e8e4e0;
+}
+
+.spec-tags span strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.review-body h3 {
+    margin-top: 0.5rem;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 1.5rem 0 1.2rem;
+}
+
+.grid-card {
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 1rem 1.5rem;
+    border: 1px solid #e8e4e0;
+}
+
+.grid-card h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #1a1a1a;
+}
+
+.grid-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.grid-card ul li {
+    padding: 0.2rem 0;
+    font-size: 0.9rem;
+    color: #333333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.grid-card ul li:last-child {
+    border-bottom: none;
+}
+
+.grid-card.highlights ul li::before {
+    content: "✓ ";
+    color: #2b6e4f;
+    font-weight: 700;
+}
+
+.grid-card.specifications ul li strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.btn-buy {
+    display: inline-block;
+    background: #0066cc;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.6rem 2.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.25s;
+    border: 2px solid #0066cc;
+    margin-top: 0.5rem;
+}
+
+.btn-buy:hover {
+    background: #0052a3;
+    border-color: #0052a3;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.15);
+}
+
+/* ============================================================ */
+/* COMPARISON TABLE - CORPORATE                                */
+/* ============================================================ */
+.compare-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e8e4e0;
+}
+
+.compare-section .section-desc {
+    color: #5a5a5a;
+    margin-bottom: 1rem;
+}
+
+.compare-table-wrap {
+    overflow-x: auto;
+    margin: 1.5rem 0 2rem;
+    background: #faf8f6;
+    border-radius: 8px;
+    border: 1px solid #e8e4e0;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    min-width: 700px;
+}
+
+.compare-table th {
+    background: #1a1a1a;
+    color: #ffffff;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.compare-table td {
+    padding: 0.6rem 1rem;
+    border-bottom: 1px solid #e8e4e0;
+    color: #333333;
+}
+
+.compare-table tr:hover td {
+    background: #f5f3f0;
+}
+
+.compare-table .winner-cell {
+    color: #0066cc;
+    font-weight: 700;
+}
+
+/* ============================================================ */
+/* BUYING GUIDE                                                  */
+/* ============================================================ */
+.buying-guide {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e8e4e0;
+}
+
+.buying-guide h2 {
+    margin-bottom: 1.2rem;
+}
+
+.guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.guide-card {
+    background: #faf8f6;
+    padding: 1.2rem 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #e8e4e0;
+}
+
+.guide-card h3 {
+    font-size: 1rem;
+    color: #1a1a1a;
+    margin: 0 0 0.3rem;
+}
+
+.guide-card p {
+    font-size: 0.88rem;
+    color: #5a5a5a;
+    margin: 0;
+}
+
+.guide-card p strong {
+    color: #1a1a1a;
+}
+
+/* ============================================================ */
+/* RESPONSIVE - BENTO GRID & ALL ELEMENTS                      */
+/* ============================================================ */
+
+@media (max-width: 900px) {
+    .blog-wrap {
+        padding: 1.5rem 1.2rem;
+    }
+    h1 {
+        font-size: 2.4rem;
+    }
+    
+    /* Bento Grid Tablet */
+    .image-bento {
+        grid-template-columns: 1fr 1fr;
+        min-height: 280px;
+    }
+    
+    .image-bento .bento-main {
+        min-height: 280px;
+        padding: 1rem;
+    }
+    
+    .image-bento .bento-main img {
+        max-height: 280px;
+    }
+    
+    .image-bento .bento-grid .thumb {
+        min-height: 140px;
+        padding: 0.4rem;
+    }
+    
+    .image-bento .bento-grid .thumb img {
+        max-height: 120px;
+    }
+    
+    .image-bento .bento-grid.two-col .thumb {
+        min-height: 140px;
+    }
+    
+    .specs-grid {
+        grid-template-columns: 1fr;
+    }
+    .review-header {
+        flex-direction: column;
+    }
+    .compare-table {
+        font-size: 0.75rem;
+        min-width: 600px;
+    }
+    .meta-bar {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    .meta-item::before {
+        content: "";
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-wrap {
+        padding: 1rem 0.8rem 2rem;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .subhead {
+        font-size: 0.95rem;
+    }
+    
+    /* Bento Grid Mobile - Stack vertically */
+    .image-bento {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        min-height: auto;
+    }
+    
+    .image-bento .bento-main {
+        min-height: 200px;
+        padding: 0.8rem;
+    }
+    
+    .image-bento .bento-main img {
+        max-height: 200px;
+    }
+    
+    .image-bento .bento-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .image-bento .bento-grid .thumb {
+        min-height: 100px;
+        padding: 0.3rem;
+        border-left: none;
+        border-bottom: 1px solid #e8e4e0;
+        border-right: 1px solid #e8e4e0;
+    }
+    
+    .image-bento .bento-grid .thumb:nth-child(2) {
+        border-right: none;
+    }
+    
+    .image-bento .bento-grid .thumb:nth-child(3) {
+        border-bottom: 1px solid #e8e4e0;
+        border-right: 1px solid #e8e4e0;
+    }
+    
+    .image-bento .bento-grid .thumb:nth-child(4) {
+        border-right: none;
+        border-bottom: none;
+    }
+    
+    .image-bento .bento-grid .thumb img {
+        max-height: 90px;
+    }
+    
+    .image-bento .bento-grid.two-col .thumb {
+        min-height: 100px;
+        border-bottom: none;
+    }
+    
+    .image-bento .bento-grid.two-col .thumb:nth-child(1) {
+        border-right: 1px solid #e8e4e0;
+    }
+    
+    .image-bento .bento-grid.two-col .thumb:nth-child(2) {
+        border-right: none;
+    }
+    
+    .title-row h2 {
+        font-size: 1.3rem;
+    }
+    .price-current {
+        font-size: 1.3rem;
+    }
+    .mouse-review {
+        padding: 1rem 0.8rem 1.2rem;
+        margin: 1.5rem 0;
+    }
+    .btn-buy {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem 1.5rem;
+    }
+    .guide-grid {
+        grid-template-columns: 1fr;
+    }
+    .compare-table {
+        font-size: 0.65rem;
+        min-width: 500px;
+    }
+    .compare-table th,
+    .compare-table td {
+        padding: 0.3rem 0.5rem;
+    }
+    .grid-card {
+        padding: 0.8rem 1rem;
+    }
+    .specs-grid {
+        gap: 1rem;
+    }
+    .spec-tags span {
+        font-size: 0.65rem;
+        padding: 0.15rem 0.7rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+    }
+}
+
+/* ============================================================ */
+/* SCROLLBAR - Clean                                            */
+/* ============================================================ */
+::-webkit-scrollbar {
+    width: 6px;
+    background: #f0ece8;
+}
+::-webkit-scrollbar-thumb {
+    background: #c0b8b0;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a09888;
+}
